@@ -1,5 +1,7 @@
-/*  NOTES
+/* 
 
+Fonts: Martel 200, 400
+Colors: Green #183039 / Black #24282B
 
 */
 
@@ -9,29 +11,21 @@
     box-sizing: border-box;
 }
 
-/*  Temporary Styles */
+/* ----------- Temporary ----------- */
 
 /* * {
-    padding: 0.5rem;
+    padding: 0,5rem;
     border: 2px solid rgb(200,200,200);
 }
 
-html, 
-body {
-    border: none;
-}
+html, body {border: none;}
 
-h1,h2,h3,h4,h5,h6,p, a {
-    border: 2px solid rgb(179, 84, 84);
-}
+h1, h2, h3, h4, h5, h6, p, a {border: 2px solid red}
+
+[class*=grid] {margin: 0;} */
 
 
-[class*=grid] { 
-    margin: 0;
-} */
-
-
-/* Re-usable Utiity Classes  */
+/* ----------- Utility classes ----------- */
 
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
@@ -63,17 +57,18 @@ h1,h2,h3,h4,h5,h6,p, a {
 .right  { text-align: right; }
 
 
-/* General typography & universal styles  */
+/* ----------- Typography ----------- */
 
 body {
     font-family: 'Martel', serif;
     font-weight: 200;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
-    font-family: 'Didot', Georgia, serif;
+    font-family:'Didot', Georgia, serif;
 }
+
 h1 {
     font-size: 10rem;
     line-height: 0.8;
@@ -85,7 +80,9 @@ h1 span {
     line-height: 0.9;
 }
 
-h2 { font-size: 2.5rem;}
+h2 {
+    font-size: 2.5rem;
+}
 
 h2 span {
     display: block;
@@ -93,7 +90,9 @@ h2 span {
     line-height: 0.9;
 }
 
-h3 { font-size: 2.5rem;}
+h3 {
+    font-size: 2.5rem;
+}
 
 p {
     font-weight: 200;
@@ -104,58 +103,52 @@ a {
     text-decoration: none;
 }
 
-/* Unique typography styles  */
 
+/* ----------- Unique Typography ----------- */
 
-.tight-text {
-  line-height: 0.8;
+.text-tight {
+    line-height: 0.8;
 }
 
-.price { 
+.price {
     display: block;
     font-weight: 400;
     margin-top: 0.5rem;
     text-align: right;
 }
 
-.text-lg { font-size: 4.5rem;} 
-.text-xl { font-size: 6rem;} 
+.text-lg {font-size: 4.5rem;} 
 
-.menu p {
+menu p {
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.9;
 }
 
-.menu h3 {
- margin: 1rem 0;
+menu h3 {
+    margin: 1rem 0;
 }
 
 
-/* Header & Footer */
+/* ----------- Header & Footer ----------- */
 
 footer {
     padding: 5%;
     padding-bottom: 1rem;
 }
 
-footer a {
-    font-size: 1.2rem;
-}
+footer a {font-size: 1.2rem;}
 
-footer h2 {
-    margin-bottom: 0.5rem;
-}
+footer h2 {margin-bottom: 0.5rem;}
 
-.sub-footer {
-    padding-top: 5%;
-}
+.sub-footer {padding-top: 5%}
 
 .sub-footer p {
     font-size: 0.8rem;
     opacity: 0.7;
 }
 
-/* Images & Background Images */
+
+/* ----------- Background & Images ----------- */
 
 .bg-image {
     background-color: #183039;
@@ -170,22 +163,19 @@ footer h2 {
 .bg-water {background-image: url('/images/water-light.jpg')}
 
 
-/* Gridlex SM  */
+/* ----------- Responsive SM ----------- */
+
 @media(max-width: 48em) {
-
-    .mob-hide { display: none; }
-
-    .mob-padded-t-0 { padding-top: 0; }
-
-    h1 { font-size: 6rem; }
-    h1 span { font-size: 2rem; }  
-    
-    footer a { font-size: 1rem;}
-
+    .mob-hide {display: none;}
+    .mob-padded-t-0 {padding-top: 0;}
+    h1 {font-size: 6rem;}
+    h1 span {font-size: 2rem;}  
+    footer a {font-size: 1rem;}
 }
 
-/* Custom Media Query XXS  */
+/* ----------- Responsive XXS ----------- */
+
 @media(max-width: 25em) {
-    h1 { font-size: 4.5rem; }
-    h1 span { font-size: 1.5rem; }  
+    h1 {font-size: 4.5rem;}
+    h1 span {font-size: 1.5rem;}  
 }
